@@ -1,0 +1,15 @@
+<odoo>
+    <record id="payment_provider_payu" model="payment.provider">
+        <field name="name">PayU</field>
+        <field name="code">payu</field>
+        <field name="sequence">50</field>
+        <field name="state">test</field>
+        <field name="journal_id" ref="account.1_bank"/>
+        <field name="payment_method_ids" eval="[(4, ref('payment_payu.payment_method_payu'))]"/>
+        <!-- <field name="image_128" type="base64" file="payment_payu/static/src/img/payu_logo.png"/> -->
+        <field name="payu_merchant_id">YOUR_MERCHANT_ID</field>
+        <field name="payu_api_key">YOUR_API_KEY</field>
+        <field name="available_currency_ids" eval="[(6, 0, [ref('base.USD'), ref('base.EUR')])]"/>
+
+    </record>
+</odoo>
