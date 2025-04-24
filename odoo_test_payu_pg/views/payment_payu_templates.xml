@@ -1,0 +1,15 @@
+<odoo>
+    <record id="inline_form" model="ir.ui.view">
+        <field name="name">PayU Inline Form</field>
+        <field name="type">qweb</field>
+        <field name="arch" type="xml">
+            <div id="payu_inline_form">
+                <p>Pay with PayU (Test Mode)</p>
+                <input type="text" name="card_number" placeholder="Card Number (e.g., 5123456789012346)"/>
+                <input type="text" name="expiry" placeholder="MM/YY (e.g., 05/25)"/>
+                <input type="text" name="cvv" placeholder="CVV (e.g., 123)"/>
+                <button type="submit" class="btn btn-primary">Pay with PayU</button>
+            </div>
+        </field>
+    </record>
+</odoo>

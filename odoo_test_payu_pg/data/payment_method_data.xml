@@ -1,0 +1,8 @@
+<odoo>
+    <data noupdate="1">
+        <record id="payment_method_payu" model="payment.method">
+            <field name="name">PayU</field>
+            <field name="code">payu</field>
+        </record>
+    </data>
+</odoo>
